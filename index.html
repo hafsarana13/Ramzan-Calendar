@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ramdan Calender</title>
+  <link rel="stylesheet" href="./style.css">
+    </head>
+
+<body>
+
+    <div class="hero-box">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="ramzan-text">
+                  <align top="center">
+                     <h1>Ramzan Kareem</h1>
+                     <audio controls>
+                     <source src="./pic/Ramadan Kareem 2024 .mp3" type="audio/mpeg"></audio>
+               
+       <p><b>CURRENT TIME </b><span id = "currentTime"></span></p>
+       <input type="time"id ="alarmTime">
+       <button onclick = "setAlarm();">Set Alarm</button> 
+       <button onclick = "alarmSound.pause();">Stop Alarm </button>  
+     
+       <script type="text/javascript">
+       function currentTime(){
+
+        var date = new Date();
+        var now = date.toLocaleString('en-US',{hour12: false});
+        document.getElementById('currentTime').innerHTML = now;
+ }
+    setInterval(currentTime, 1);
+
+    var alaramSound = new Audio("music.mp3");
+
+    function setAlarm(){
+        var alarmTime = document.getElementById('alarmTime').value;
+        var now = new Date();
+        var alarm = new Date(now.toDateString() + "  " + alarmTime);
+
+        var timeRemaining = alarm - now;
+
+        setTimeout(PlayAlarm, timeRemaining);
+
+        document.getElementById('alarmTime').disabled = true;
+
+ }
+
+ function PlayAlarm(){
+    alarmSound.play();
+    document.getElementById('alarmTime').disabled = false;
+ }
+   </script>
+               <table>
+             
+                  <h2> RAHMAT 10 DAY </h2>
+                    <tr> <!--Example Type Your Real time-->
+                        
+         
+                   <th>RAMZAN</th>
+                    <th>DATE</th>
+                    <th>DAY</th>
+                    <th>SEHAR</th>
+                    <th>SUNRISE</th>
+                    <th>IFTER</th>
+                    </tr>
+                    <!--Example Type Your Real time-->
+                    <td>1 Ramzan</td>
+                    <td>12 March 2024</td>
+                    <td>Tuesday</td>
+                    <td>4:55 Am</td>
+                    <td>6:42 AM</td>
+                    <td>6:10 PM</td> 
+                    <tr>
+                    <!--Example Type Your Real time-->
+                    <td>2 Ramzan</td>
+                    <td>13 March 2024</td>
+                    <td>Wednesday</td>
+                    <td>4:53 AM</td>
+                    <td>6:42 AM</td>
+                    <td>6:10 PM</td> 
+                    </tr>
+                    <tr> <!--Example Type Your Real time-->
+                    <td>3 Ramzan</td>
+                    <td>14 March  2024</td>
+                    <td>Tuesday</td>
+                    <td>4:52 AM</td>
+                    <td>6:42 AM</td>
+                    <td>6:12 PM</td> 
+                    </td>
+                    <tr><!--Example Type Your Real time-->
+                    <td>4 Ramzan</td>
+                    <td>15 March 2024</td>
+                    <td>Friday</td>
+                    <td>4:51 AM</td>
+                    <td>6:42 AM</td>
+                    <td>6:12 PM</td>  
+                    </tr>
+                    <td>5 Ramzan</td>
+                    <td>16 March 2024</td>
+                    <td>Saturday</td>
+                    <td>4:49 AM </td>
+                    <td>6:42 AM</td>
+                    <td>6:13 PM </td> 
+                    </tr>
+                    <tr> <!--Example Type Your Real time-->
+                    <td>6 Ramzan</td>
+                    <td>17 March 2024</td>
+                    <td>Sunday</td>
+                    <td>4:48  AM</td>
+                    <td>6:42  AM</td>
+                    <td>6:13  PM</td> 
+                    </tr>
+                    <tr> <!--Example Type Your Real time-->
+                    <td>7 Ramzan</td>
+                    <td>18 March 2024</td>
+                    <td>Monday</td>
+                    <td> 4:47 AM</td>
+                    <td> 6:42 AM</td>
+                    <td> 6:13 PM</td> 
+                    </tr>
+                    <tr> <!--Example Type Your Real time-->
+                    <td>8 Ramzan</td>
+                    <td>19 March  2024</td>
+                    <td>Tuesday</td>
+                    <td>4:46 AM</td>
+                    <td>6:42 AM</td>
+                    <td>6:15 PM</td> 
+                    </tr>
+                    <tr><!--Example Type Your Real time-->
+                    <td>9 Ramzan</td>
+                    <td>20 March 2024</td>
+                    <td>Wednesday</td>
+                    <td>4:44 AM</td>
+                    <td>6:42 AM</td>
+                    <td>6:15 PM</td> 
+                    </tr>
+                    <tr><!--Example Type Your Real time-->
+                    <tr>
+                    <td>10 Ramzan</td>
+                    <td>21 March  2024</td>
+                    <td>Thursday</td>
+                    <td>4:43 AM</td>
+                    <td>6:42 AM</td>
+                    <td>6:16 PM</td> 
+                    </tr>
+                    </table>
+                  
+                    <h2>BARKAT 10 DAY </h2>
+                    <table>
+                    <tr> <!--Example Type Your Real time-->
+                    <th>RAMZAN</th>
+                     <th>DATE</th>
+                     <th>DAY</th>
+                     <th>SEHAR</th>
+                     <th>SUNRISE</th>
+                     <th>IFTER</th>
+                    </tr>
+                    <!--Example Type Your Real time-->
+                   <td>11 Ramzan</td>
+                   <td>22 March 2024</td>
+                   <td>Friday</td>
+                   <td>4:41 AM</td>
+                    <td>6:42 AM</td>
+                   <td>6:17 PM</td> 
+                   <tr>
+                   <!--Example Type Your Real time-->
+                   <td>12 Ramzan</td>
+                   <td>23 March 2024</td>
+                   <td>Saturday</td>
+                   <td>4:40 AM</td>
+                   <td>6:42 AM</td>
+                   <td>6:17 PM</td> 
+                   </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>13 Ramzan</td>
+                  <td>24 March 2024</td>
+                  <td>Sunday</td>
+                  <td>4:39 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:18 PM</td> 
+                  </td>
+                  <tr><!--Example Type Your Real time-->
+                  <td>14 Ramzan</td>
+                  <td>25 March 2024</td>
+                  <td>Monday</td>
+                  <td>4:37 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:19 PM</td>  
+                  </tr>
+                  <td>15 Ramzan</td>
+                  <td>26 March 2024</td>
+                  <td>Tuesday</td>
+                  <td>4:36 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:19 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>16 Ramzan</td>
+                  <td>27 March 2024</td>
+                  <td>Wednesday</td>
+                  <td>4:35 AM</td>
+                  <td>6:42AM</td>
+                  <td>6:20 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>17 Ramzan</td>
+                  <td>28 March 2024</td>
+                  <td>Thursday</td>
+                  <td>4:33 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:21 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>18 Ramzan</td>
+                  <td>29 March  2024</td>
+                  <td>Friday</td>
+                  <td>4:32 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:21 PM</td> 
+                  </tr>
+                  <tr><!--Example Type Your Real time-->
+                  <td>19 Ramzan</td>
+                  <td>30 March 2024</td>
+                  <td>Saturday</td>
+                  <td>4:31 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:21 PM</td> 
+                  </tr>
+                  <tr><!--Example Type Your Real time-->
+                  <tr>
+                  <td>20 Ramzan</td>
+                  <td>31 March  2024</td>
+                  <td>Sunday</td>
+                  <td>4:39 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:23 PM</td> 
+                  </tr>
+                  </table>
+                 <h2>MAGHFIRAT 10 DAY </h2>
+                  <table>
+                  <tr> <!--Example Type Your Real time-->
+                 <th>RAMZAN</th>
+                 <th>DATE</th>
+                 <th>DAY</th>
+                 <th>SEHAR</th>
+                 <th>SUNRISE</th>
+                 <th>IFTER</th>
+                  </tr>
+                  <!--Example Type Your Real time-->
+                  <td>21 Ramzan</td>
+                  <td>1 April 2024</td>
+                  <td>Monday</td>
+                  <td>4:28 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:23 PM</td> 
+                  <tr>
+                  <!--Example Type Your Real time-->
+                  <td>22 Ramzan</td>
+                  <td>2 April 2024</td>
+                  <td>Tuesday</td>
+                  <td>4:26 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:24 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>23 Ramzan</td>
+                  <td>3 Apirl  2024</td>
+                  <td>Thursday</td>
+                  <td>4:24 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:25 PM</td> 
+                  </td>
+                  <tr><!--Example Type Your Real time-->
+                  <td>24 Ramzan</td>
+                  <td>4 Apirl 2024</td>
+                  <td>Friday</td>
+                  <td>4:22 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:26 PM</td>  
+                  </tr>
+                  <td>25 Ramzan</td>
+                  <td>5 Apirl 2024</td>
+                  <td>Saturday</td>
+                  <td>4:21 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:27 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>26 Ramzan</td>
+                  <td>6 Apirl 2024</td>
+                  <td>Sunday</td>
+                  <td>4:19 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:27 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>27 Ramzan</td>
+                  <td>7 Apirl 2024</td>
+                  <td>Monday</td>
+                  <td>4:18 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:28 PM</td> 
+                  </tr>
+                  <tr> <!--Example Type Your Real time-->
+                  <td>28 Ramzan</td>
+                  <td>8 April   2024</td>
+                  <td>Tuesday</td>
+                  <td>4:17 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:29 PM</td> 
+                  </tr>
+                  <tr><!--Example Type Your Real time-->
+                  <td>29 Ramzan</td>
+                  <td>9 April  2024</td>
+                  <td>Wednesday</td>
+                  <td>4:15 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:29 PM</td> 
+                  </tr>
+                  <tr><!--Example Type Your Real time-->
+                  <tr>
+                  <td>30 Ramzan</td>
+                  <td>10 April  2024</td>
+                  <td>Thursday</td>
+                  <td>4:15 AM</td>
+                  <td>6:42 AM</td>
+                  <td>6:29 PM</td> 
+                  </tr>
+                  </table>
+                  </div>
+          </div>
+       </div>
+    </div>
+
+
+</body>
+
+</html>
